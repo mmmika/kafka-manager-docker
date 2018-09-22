@@ -8,7 +8,7 @@ ENV JAVA_MAJOR=8 \
   JAVA_DOWNLOAD_HASH=aa0333dd3019491ca4f6ddbe78cdb6d0 \
   JAVA_HOME=/usr/java/jdk1.${JAVA_MAJOR}.0_${JAVA_UPDATE} \
   ZK_HOSTS=localhost:2181 \
-  KMANAGER_VERSION=1.3.3.14 \
+  KMANAGER_VERSION=1.3.3.18 \
   KMANAGER_REVISION=5de818f330365fc3cd835b8227875ad12f29ed15 \
   KMANAGER_CONFIG="conf/application.conf" \
   TERM=xterm
@@ -46,6 +46,6 @@ RUN mkdir -p /usr/share/info/dir && \
 	
 WORKDIR /opt/kafka-manager
 	
-EXPOSE 9000
+EXPOSE 9001
 	
 ENTRYPOINT ["./kmanager-start.sh"]
